@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="onlinerSuite" verbose="1">
+	<test name="Dependensies">
+		<groups>
+			<dependencies>
+				<group name="suite3" depends-on="suite2" />
+				<group name="suite2" depends-on="suite1" />
+			</dependencies>
+		</groups>
+		<packages>
+			<package name="by.htp.library.onliner.*" />
+		</packages>
+	</test>
+</suite>

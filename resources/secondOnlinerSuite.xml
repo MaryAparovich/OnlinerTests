@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="secondOnlinerSuite" verbose="1">
+	<test name="Groups">
+		<groups>
+			<run>
+				<include name="suite1"></include>
+				<include name="suite3"></include>
+			</run>
+		</groups>
+		<packages>
+			<package name="by.htp.library.onliner.*" />
+		</packages>
+	</test>
+</suite>
